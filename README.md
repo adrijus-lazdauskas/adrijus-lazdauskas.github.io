@@ -19,11 +19,11 @@ Dann `http://localhost:4173` öffnen.
 - Eigener Mauszeiger mit heller Kontur und blauem Leuchten; stärkeres Leuchten über Links und aktiven Buttons. Nur bei Maus-/Trackpad-Bedienung, mit nativen Fallbacks.
 - LinkedIn, GitHub, Hack The Box und E-Mail direkt im Einstieg; dezente Textlinks zu Werdegang und CV.
 - Einseitige CV-PDFs in beiden Sprachen, passend zur Website-Auswahl verlinkt; im Einstieg als dezenter Textlink.
-- Bauilify-Demo: den Glasfaserausbau auf einer Wochenplanung verschieben und Überschneidungen in Zeitraum und Straßenabschnitt auflösen. Feste, nachvollziehbare Regeln mit animierter Terminverschiebung und Zurücksetzen.
-- Reihenfolge: Werdegang, Projekte (phisheye, Security on a Chip / Samurai, Bauilify), Praxisarbeiten, Kenntnisse und Kontakt.
+- Kompakte Bauilify-Karte (180 px Kartenhöhe): einen Glasfaser-Bauabschnitt per Ziehen, Tippen oder Tastatur auf einer Straße platzieren. Überschneidungen mit einer bestehenden Baustelle werden nach Straße, Hausnummernbereich und Zeitraum geprüft. Ein anderer Abschnitt oder Termin löst den Konflikt.
+- Reihenfolge: Werdegang, Projekte (Bauilify mit Kartendemo, phisheye, Security on a Chip / Samurai), Praxisarbeiten, Kenntnisse und Kontakt.
 - Touch- und Tastaturbedienung; reduzierte Animationen bei entsprechender Systemeinstellung.
 
-Die Demo verwendet drei fiktive Bauvorhaben auf einer vereinfachten Wochenplanung. Sie läuft lokal im Browser und benötigt keine Verbindung zu Bauilify. Es gibt keine extern geladenen Schriftarten, Tracker oder Analyse-Dienste.
+Die Demo verwendet eine fiktive Straßenkarte mit einer bestehenden Wasserleitungs-Baustelle und einer frei platzierbaren Glasfaser-Baustelle. Die gezeichneten Abschnitte rasten auf Hausnummernbereiche ein. Sie läuft lokal im Browser und benötigt keine Verbindung zu Bauilify. Es gibt keine extern geladenen Schriftarten, Tracker oder Analyse-Dienste.
 
 ## GitHub Pages veröffentlichen
 
@@ -40,7 +40,7 @@ Offizielle Anleitung: https://docs.github.com/en/pages/getting-started-with-gith
 ## Bearbeiten
 
 - `dist/app.js`: deutsche und englische Texte, Inhalte, Sprach- und Farbschemawechsel.
-- `dist/planner.js`: Bauilify-Demo mit Wochenplanung, Konfliktprüfung und Übersetzungen.
+- `dist/planner.js`: Bauilify-Kartendemo mit Zeicheninteraktion, Zeitraumwahl, Konfliktprüfung und Übersetzungen.
 - `dist/styles.css`: Gestaltung, Light-/Darkmode und Bildschirmgrößen.
 - `dist/assets/`: die beiden CV-PDFs. Beide Sprachversionen bei Änderungen aktualisieren.
 - `dist/index.html`: Metadaten und lesbare englische HTML-Fassung für Browser ohne JavaScript.

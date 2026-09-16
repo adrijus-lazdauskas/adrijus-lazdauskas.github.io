@@ -50,48 +50,48 @@
 .learning-card .eyebrow{font-size:12px}
 .skill-grid li>span{text-align:right}
 @media(max-width:650px){.hero-socials{gap:2px 18px}.skill-grid li>span{text-align:left}}
-/* A compact planning exercise with real location-and-time comparisons. */
-.planner-demo{margin:0 12px 12px;padding:28px 25px 20px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
-.planner-heading{display:flex;justify-content:space-between;align-items:start;gap:26px;margin-bottom:26px}
-.planner-heading .eyebrow{margin-bottom:10px;font-size:12px}
-.planner-heading h4{font-size:24px;line-height:1.3;letter-spacing:-.6px;margin:0 0 8px;font-weight:500}
-.planner-heading p:not(.eyebrow){font-size:16px;color:var(--muted);margin:0}
-.planner-note{font-size:12px;color:var(--muted);text-align:right;max-width:180px;flex:0 0 165px}
-.planner-layout{display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);gap:34px;align-items:start}
-.planner-controls{padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:9px}
-.planner-street{font-size:20px;font-weight:500;letter-spacing:-.4px;margin-bottom:3px}
-.planner-section{color:var(--muted);font-size:14px;margin-bottom:24px}
-.planner-controls fieldset{border:0;padding:0;margin:0;min-width:0}
-.planner-controls legend{font-size:14px;margin-bottom:10px;padding:0;font-weight:500}
-.planner-options{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
-.planner-options button{min-height:44px;padding:6px 2px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);font-size:14px}
-.planner-options button:hover{border-color:var(--accent)}
-.planner-options button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
-.planner-duration{font-size:12px;color:var(--muted);margin:9px 0 14px}
-.planner-controls .reset-button{font-size:14px}
-.planner-board{min-width:0}
-.planner-weeks{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));margin:0 0 14px;text-align:center;font:12px 'Courier New',monospace;color:var(--muted)}
-.planner-row+.planner-row{margin-top:19px}
-.planner-row-label{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2px 12px;margin-bottom:7px;line-height:1.4}
-.planner-row-label strong{font-size:14px;font-weight:500}
-.planner-row-label>span{font-size:12px;color:var(--muted)}
-.planner-track{position:relative;isolation:isolate;height:48px;border:1px solid var(--line);border-radius:6px;background:repeating-linear-gradient(to right,transparent 0,transparent calc(100% / 6 - 1px),var(--line) calc(100% / 6 - 1px),var(--line) calc(100% / 6));overflow:hidden}
-.planner-bar,.planner-overlap{position:absolute;left:calc(var(--start) * 100% / 6 + 4px);width:calc(var(--duration) * 100% / 6 - 8px);top:5px;bottom:5px;border-radius:4px;transition:left .3s ease,width .3s ease}
-.planner-bar{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;background:var(--line);color:var(--ink)}
-.planner-bar.fibre{background:var(--accent);color:var(--bg)}
-.planner-bar.water{background:var(--soft);box-shadow:inset 0 0 0 1px var(--accent)}
-.planner-overlap{z-index:1;top:1px;bottom:1px;left:calc(var(--start) * 100% / 6);width:calc(var(--duration) * 100% / 6);border:2px solid var(--bad);pointer-events:none}
-.planner-overlap[hidden]{display:none}
-.planner-row-note{display:block;font-size:12px;color:var(--muted);margin-top:3px}
-.planner-feedback{display:flex;align-items:start;gap:13px;margin-top:26px;padding:18px 20px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
-.planner-feedback>.icon{margin-top:3px}
-.planner-feedback.has-conflict{border-color:var(--bad)}
-.planner-feedback.has-conflict>.icon,.planner-feedback.has-conflict strong{color:var(--bad)}
-.planner-feedback.is-clear{border-color:var(--good)}
-.planner-feedback.is-clear>.icon,.planner-feedback.is-clear strong{color:var(--good)}
-.planner-feedback strong{display:block;font-size:16px;font-weight:500;line-height:1.5;margin-bottom:4px}
-.planner-feedback p{font-size:14px;line-height:1.6;margin:0;color:var(--muted)}
-.planner-feedback .planner-hint{margin-top:5px}
-.planner-takeaway{font-size:14px;color:var(--muted);margin:14px 0 0;line-height:1.6}
-@media(max-width:900px){.planner-layout{grid-template-columns:1fr;gap:24px}.planner-controls{display:grid;grid-template-columns:1fr 1fr;column-gap:25px;align-items:start}.planner-controls fieldset{grid-column:2;grid-row:1 / span 3}.planner-section{margin-bottom:6px}.planner-controls .reset-button{grid-column:2;grid-row:4;justify-self:start}.planner-duration{grid-column:1;margin-bottom:0}}
-@media(max-width:650px){.planner-demo{margin:0 8px 8px;padding:22px 16px 18px}.planner-heading{display:block;margin-bottom:22px}.planner-heading h4{font-size:22px}.planner-note{display:block;max-width:none;text-align:left;margin-top:9px}.planner-controls{display:block;padding:18px}.planner-section{margin-bottom:19px}.planner-duration{margin:9px 0}.planner-feedback{padding:16px 13px;gap:9px}.planner-feedback>.icon{width:18px;height:18px}.planner-row-label{flex-direction:column}.planner-heading p:not(.eyebrow){font-size:16px}}
+/* Compact schematic street map with address-based construction overlays. */
+.map-demo{--map-water:#177c88;margin:0 12px 12px;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+:root[data-theme=dark] .map-demo{--map-water:#77d7df}
+.map-heading{display:flex;justify-content:space-between;align-items:start;gap:14px}
+.map-heading .eyebrow{font-size:12px;margin-bottom:6px}
+.map-heading h4{font-size:22px;font-weight:500;line-height:1.3;letter-spacing:-.5px;margin:0}
+.map-heading>span{font-size:12px;color:var(--muted);white-space:nowrap}
+.map-instructions{font-size:16px;color:var(--muted);margin:7px 0 14px;line-height:1.5}
+.map-toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px 20px;margin-bottom:8px}
+.map-legend{display:flex;flex-wrap:wrap;align-items:center;gap:5px 20px;font-size:12px;color:var(--muted)}
+.map-legend>span{display:inline-flex;align-items:center;gap:7px}
+.map-legend i{display:inline-block;width:16px;height:6px;border-radius:2px;flex:none}
+.water-key{background:var(--map-water)}.fibre-key{background:var(--accent)}
+.map-actions{display:flex;align-items:center;gap:8px;margin-left:auto}
+.map-actions label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.map-actions select{min-height:44px;max-width:150px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);font:14px Arial,Helvetica,sans-serif;padding:8px 10px}
+.map-actions select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.map-actions .reset-button{width:44px;height:44px;padding:8px}
+.map-actions .reset-button .icon{width:18px;height:18px}
+.street-map{position:relative;height:180px;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:var(--surface);isolation:isolate}
+.map-connections{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.map-connections path{fill:none;vector-effect:non-scaling-stroke}
+.map-connections .road-border{stroke:var(--line);stroke-width:20px}
+.map-connections .road-fill{stroke:var(--bg);stroke-width:18px}
+.map-connections .road-center{stroke:var(--line);stroke-width:1px;stroke-dasharray:4 6}
+.map-road{position:absolute;left:5%;width:90%;height:44px;padding:0;border:0;background:transparent;color:var(--ink);text-align:left;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.road-main{top:39px}.road-park{top:112px}
+.map-road-surface{position:absolute;inset:1px 0;border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+.map-road-surface::after{content:'';position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--line)}
+.map-road:hover .map-road-surface{border-color:var(--accent)}
+.map-road-label,.map-address{position:absolute;top:-19px;font-size:12px;line-height:1.4;background:var(--surface);padding:0 3px;white-space:nowrap;pointer-events:none}
+.map-road-label{left:5px;color:var(--muted)}
+.map-address{right:5px;color:var(--accent)}
+.map-water-work,.map-new-work,.map-overlap{position:absolute;pointer-events:none;border-radius:3px}
+.map-water-work{left:22.5%;width:22.5%;height:9px;top:8px;background:var(--map-water)}
+.map-new-work{left:calc(var(--first) * 2.5%);width:calc(var(--length) * 2.5%);height:9px;top:26px;background:var(--accent);box-shadow:0 0 0 2px var(--bg)}
+.map-overlap{left:calc(var(--first) * 2.5%);width:calc(var(--length) * 2.5%);top:4px;bottom:4px;border:2px solid var(--bad);background:repeating-linear-gradient(135deg,transparent,transparent 5px,color-mix(in srgb,var(--bad) 13%,transparent) 5px,color-mix(in srgb,var(--bad) 13%,transparent) 8px)}
+.map-new-work[hidden],.map-overlap[hidden]{display:none}
+.map-feedback{display:flex;align-items:start;gap:10px;min-height:74px;padding:13px 2px 0;color:var(--muted)}
+.map-feedback>.icon{width:18px;height:18px;margin-top:3px}
+.map-feedback strong{display:block;font-size:14px;font-weight:500;line-height:1.5;color:var(--ink)}
+.map-feedback p{font-size:14px;line-height:1.5;margin:3px 0 0}
+.map-feedback.has-conflict>.icon,.map-feedback.has-conflict strong{color:var(--bad)}
+.map-feedback.is-clear>.icon,.map-feedback.is-clear strong{color:var(--good)}
+@media(max-width:650px){.map-demo{margin:0 8px 8px;padding:16px 12px 12px}.map-heading h4{font-size:20px}.map-heading .eyebrow{font-size:11px;letter-spacing:1px}.map-heading>span{font-size:12px}.map-instructions{margin-bottom:10px}.map-toolbar{gap:3px 12px}.map-legend{gap:3px 13px}.map-feedback{min-height:84px}.map-road{left:4%;width:92%}}
