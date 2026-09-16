@@ -14,17 +14,16 @@ Dann `http://localhost:4173` öffnen.
 
 ## Inhalt
 
-- Deutsch und Englisch (`?lang=de` / `?lang=en`), mit gespeicherter Sprachauswahl.
+- Englisch als Standard; Deutsch und Englisch (`?lang=de` / `?lang=en`) mit gespeicherter Sprachauswahl.
 - Light-/Darkmode, zuerst entsprechend der Systemeinstellung.
 - Eigener Mauszeiger mit heller Kontur und blauem Leuchten; stärkeres Leuchten über Links und aktiven Buttons. Nur bei Maus-/Trackpad-Bedienung, mit nativen Fallbacks.
-- Einstieg mit dezenten Textlinks zu Werdegang und CV, ohne hervorgehobenen Button.
+- LinkedIn, GitHub, Hack The Box und E-Mail direkt im Einstieg; dezente Textlinks zu Werdegang und CV.
 - Einseitige CV-PDFs in beiden Sprachen, passend zur Website-Auswahl verlinkt; im Einstieg als dezenter Textlink.
-- phisheye-Demo: drei Mails auswählen, animierter Analyseweg, zufälliges Beispielergebnis und Neustart.
+- Bauilify-Demo: den Glasfaserausbau auf einer Wochenplanung verschieben und Überschneidungen in Zeitraum und Straßenabschnitt auflösen. Feste, nachvollziehbare Regeln mit animierter Terminverschiebung und Zurücksetzen.
 - Reihenfolge: Werdegang, Projekte (phisheye, Security on a Chip / Samurai, Bauilify), Praxisarbeiten, Kenntnisse und Kontakt.
-- Aufklappbarer konzeptioneller Ablauf zur risikobasierten Schwachstellenpriorisierung in Deutsch und Englisch; ohne KQL-Code oder Unternehmensdaten.
 - Touch- und Tastaturbedienung; reduzierte Animationen bei entsprechender Systemeinstellung.
 
-Die Demo ist eine lokale Simulation. Sie verarbeitet keine echten E-Mails und kontaktiert weder phisheye noch VirusTotal. Es gibt keine extern geladenen Schriftarten, Tracker oder Analyse-Dienste.
+Die Demo verwendet drei fiktive Bauvorhaben auf einer vereinfachten Wochenplanung. Sie läuft lokal im Browser und benötigt keine Verbindung zu Bauilify. Es gibt keine extern geladenen Schriftarten, Tracker oder Analyse-Dienste.
 
 ## GitHub Pages veröffentlichen
 
@@ -40,17 +39,18 @@ Offizielle Anleitung: https://docs.github.com/en/pages/getting-started-with-gith
 
 ## Bearbeiten
 
-- `dist/app.js`: deutsche und englische Texte, Inhalte und Mail-Demo.
+- `dist/app.js`: deutsche und englische Texte, Inhalte, Sprach- und Farbschemawechsel.
+- `dist/planner.js`: Bauilify-Demo mit Wochenplanung, Konfliktprüfung und Übersetzungen.
 - `dist/styles.css`: Gestaltung, Light-/Darkmode und Bildschirmgrößen.
 - `dist/assets/`: die beiden CV-PDFs. Beide Sprachversionen bei Änderungen aktualisieren.
-- `dist/index.html`: Metadaten und lesbare deutsche HTML-Fassung für Browser ohne JavaScript.
-- Nach Textänderungen `node scripts/prerender.cjs` ausführen, damit die deutsche HTML-Fassung aktuell bleibt.
+- `dist/index.html`: Metadaten und lesbare englische HTML-Fassung für Browser ohne JavaScript.
+- Nach Textänderungen `node scripts/prerender.cjs` ausführen, damit die englische HTML-Fassung aktuell bleibt.
 
 ## Inhaltliche Einordnung
 
 - Studium mit voraussichtlichem Abschluss 2027.
-- CDSA/CWES als laufende Weiterbildung, nicht als erworbene Zertifikate.
-- Sprachkenntnisse: Deutsch und Litauisch fließend, Englisch B1.
+- CDSA/CWES als eigenständige Zertifizierungsvorbereitung in der Freizeit, mit laufendem Status.
+- Sprachkenntnisse: Deutsch und Litauisch fließend, Englisch auf Business-Niveau.
 - Bei Security on a Chip ist die Mitentwicklung des Samurai-Loggers mit USB-Monitoring unter Linux belegt und beschrieben.
 - Bauilify und phisheye werden anhand ihrer Projektfunktionen vorgestellt.
 - phisheye klar als Projekt in Entwicklung gekennzeichnet.
