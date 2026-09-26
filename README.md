@@ -19,11 +19,11 @@ Dann `http://localhost:4173` öffnen.
 - Eigener Mauszeiger mit heller Kontur und blauem Leuchten; stärkeres Leuchten über Links und aktiven Buttons. Nur bei Maus-/Trackpad-Bedienung, mit nativen Fallbacks.
 - LinkedIn, GitHub, Hack The Box und E-Mail direkt im Einstieg; dezente Textlinks zu Werdegang und CV.
 - Einseitige CV-PDFs in beiden Sprachen, passend zur Website-Auswahl verlinkt; im Einstieg als dezenter Textlink.
-- Kompakte Bauilify-Karte (180 px Kartenhöhe): einen Glasfaser-Bauabschnitt per Ziehen, Tippen oder Tastatur auf einer Straße platzieren. Überschneidungen mit einer bestehenden Baustelle werden nach Straße, Hausnummernbereich und Zeitraum geprüft. Ein anderer Abschnitt oder Termin löst den Konflikt.
-- Reihenfolge: Werdegang, Projekte (Bauilify mit Kartendemo, phisheye, Security on a Chip / Samurai), Praxisarbeiten, Kenntnisse und Kontakt.
+- Drei abgeschlossene Weiterbildungen mit lokal gespeicherten Logos und direkten Nachweislinks im Werdegang (Claude Code 101, Google Cloud Responsible AI sowie Microsoft/LinkedIn Generative AI).
+- Reihenfolge: Werdegang, Projekte (Bauilify, phisheye, Security on a Chip / Samurai), Praxisarbeiten, Kenntnisse und Kontakt.
 - Touch- und Tastaturbedienung; reduzierte Animationen bei entsprechender Systemeinstellung.
 
-Die Demo verwendet eine fiktive Straßenkarte mit einer bestehenden Wasserleitungs-Baustelle und einer frei platzierbaren Glasfaser-Baustelle. Die gezeichneten Abschnitte rasten auf Hausnummernbereiche ein. Sie läuft lokal im Browser und benötigt keine Verbindung zu Bauilify. Es gibt keine extern geladenen Schriftarten, Tracker oder Analyse-Dienste.
+Es gibt keine extern geladenen Schriftarten, Tracker oder Analyse-Dienste.
 
 ## GitHub Pages veröffentlichen
 
@@ -40,9 +40,8 @@ Offizielle Anleitung: https://docs.github.com/en/pages/getting-started-with-gith
 ## Bearbeiten
 
 - `dist/app.js`: deutsche und englische Texte, Inhalte, Sprach- und Farbschemawechsel.
-- `dist/planner.js`: Bauilify-Kartendemo mit Zeicheninteraktion, Zeitraumwahl, Konfliktprüfung und Übersetzungen.
 - `dist/styles.css`: Gestaltung, Light-/Darkmode und Bildschirmgrößen.
-- `dist/assets/`: die beiden CV-PDFs. Beide Sprachversionen bei Änderungen aktualisieren.
+- `dist/assets/`: die beiden CV-PDFs und die Logos unter `badges/`. Beide CV-Sprachversionen bei Änderungen aktualisieren.
 - `dist/index.html`: Metadaten und lesbare englische HTML-Fassung für Browser ohne JavaScript.
 - Nach Textänderungen `node scripts/prerender.cjs` ausführen, damit die englische HTML-Fassung aktuell bleibt.
 
@@ -55,3 +54,11 @@ Offizielle Anleitung: https://docs.github.com/en/pages/getting-started-with-gith
 - Bauilify und phisheye werden anhand ihrer Projektfunktionen vorgestellt.
 - phisheye klar als Projekt in Entwicklung gekennzeichnet.
 - Die Praxisarbeiten enthalten keine internen Unternehmensdaten. Die Originalarbeiten sind nicht Teil der Website.
+
+## Logoquellen
+
+Die Logos sind lokal gespeichert; erst das Anklicken einer Karte öffnet den jeweiligen Nachweis.
+
+- Claude: Spark-Symbol aus dem Header des [Claude-Academy-Nachweises](https://academy.claude.com/verify/f9c586242816f08b2f6e67057822b501).
+- Google Cloud: [Cloud-Symbol](https://www.gstatic.com/cgc/super_cloud_gradient.png), eingebunden auf der offiziellen Google-Cloud-Website.
+- Microsoft: vierfarbiges Microsoft-Symbol als SVG, entsprechend dem [offiziellen Logo](https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31) der Microsoft-Website.
